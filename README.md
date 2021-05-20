@@ -1,2 +1,1 @@
 # KolesaUpgrade
-for course KolesaUpgrade
