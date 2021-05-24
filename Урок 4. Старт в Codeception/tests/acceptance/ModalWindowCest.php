@@ -7,13 +7,13 @@ class ModalWindowCest
      */
     public function checkSearchInsideTheModalWindowCest(AcceptanceTester $I)
     {
-        $I->amOnPage('');
+       $I->amOnPage('');
         $I->seeElement('#homefeatured > li:nth-child(2) > div > div.right-block > h5 > a');
         $I->moveMouseOver('#homefeatured > li:nth-child(2) > div > div.left-block > div > a.product_img_link > img');
-        $I->click('#homefeatured > li:nth-child(2) > div > div.left-block > div > div.quick-view-wrapper-mobile > a');
-        $I->seeElement('#center_column');
-        $I->switchToIframe('fancybox-iframe');
-        $I->see('Blouse','fancybox-iframe');
-        
+        $I->seeElement('#homefeatured > li.ajax_block_product.col-xs-12.col-sm-4.col-md-3.last-item-of-mobile-line.hovered > div > div.left-block > div > a.quick-view');
+        $I->click('#homefeatured > li.ajax_block_product.col-xs-12.col-sm-4.col-md-3.last-item-of-mobile-line.hovered > div > div.left-block > div > a.quick-view');
+        $I->performOn('.product', ActionSequence::build()
+            ->seeElement('.#product > div > div > div.pb-center-column.col-xs-12.col-sm-4 > h1')
+    );
     }
 }
