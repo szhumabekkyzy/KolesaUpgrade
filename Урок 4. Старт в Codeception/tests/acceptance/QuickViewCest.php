@@ -7,7 +7,6 @@ class QuickViewCest
      */
     public function checkSearchInsideQuickView(AcceptanceTester $I)
     {
-        
         $I->amOnPage('');
         $I->scrollTo('#homefeatured > li:nth-child(2) > div > div.left-block > div > a.product_img_link > img');
         $I->moveMouseOver('#homefeatured > li:nth-child(2) > div > div.left-block > div > a.product_img_link > img');
