@@ -7,7 +7,7 @@ class ModalWindowCest
      */
     public function checkSearchInsideTheModalWindowCest(AcceptanceTester $I)
     {
-      $I->amOnPage('index.php');
+      $I->amOnPage('');
         $I->waitForElement('#homefeatured > li:nth-child(2) > div > div.left-block > div', 30);
         $I->moveMouseOver('#homefeatured > li:nth-child(2) > div > div.left-block > div');
         $I->click('#homefeatured > li:nth-child(2) > div > div.left-block > div > a.quick-view > span');
