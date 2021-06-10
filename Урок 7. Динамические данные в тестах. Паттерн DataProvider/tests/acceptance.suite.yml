@@ -15,5 +15,7 @@ modules:
             browser: chrome
             windows_size: 1440x900
         - \Helper\Acceptance
+<<<<<<< HEAD:Урок 7. Динамические данные в тестах. Паттерн DataProvider/tests/acceptance.suite.yml
         - \Helper\BaseHelper
 step_decorators: ~        
+
