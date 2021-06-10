@@ -17,15 +17,15 @@ class fillFieldsCest
     public function checkFillField(\AcceptanceTester $I)
     {
        
-        $firstName = $I ->getFaker() -> firstName;
-        $lastName = $I ->getFaker() -> lastName;
-        $email = $I ->getFaker()-> email;
-        $phoneNumber = $I ->getFaker() -> getPhoneKZ();
-        $address = $I ->getFaker()-> address;
-        $city = $I ->getFaker()-> city;
-        $state = $I ->getFaker()-> region;
-        $postal = $I ->getFaker() -> postCode;
-        $cardNumber = $I ->getFaker() -> getCardNumber();
+        $firstName = $I->getFaker()->firstName;
+        $lastName = $I->getFaker()->lastName;
+        $email = $I->getFaker()->email;
+        $phoneNumber = $I->getFaker()->getPhoneKZ();
+        $address = $I->getFaker()->address;
+        $city = $I->getFaker()->city;
+        $state = $I->getFaker()->region;
+        $postal = $I->getFaker()->postCode;
+        $cardNumber = $I->getFaker()->getCardNumber();
         
         $I->amOnPage('');
         $I ->fillField(Fill::$firstName, $firstName);
