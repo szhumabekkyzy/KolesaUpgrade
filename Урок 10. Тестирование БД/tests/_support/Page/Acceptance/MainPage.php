@@ -3,7 +3,7 @@ namespace Page;
 
 class MainPage
 {
-    public static $URL = '/people?owner=Leka777kz';
+    public static $URL = '/people?owner=szhumabekkyzy';
 
     public static $count = '#app > div > div > div > span';
 
