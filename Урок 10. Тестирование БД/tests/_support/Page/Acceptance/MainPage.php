@@ -1,5 +1,5 @@
 <?php
-namespace Page;
+namespace Page\Acceptance;
 
 class MainPage
 {
