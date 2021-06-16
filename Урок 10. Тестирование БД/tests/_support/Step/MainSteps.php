@@ -24,7 +24,7 @@ class MainSteps extends \AcceptanceTester
                 "avatar" => $faker->imageUrl(),
                 "canBeKilledBySnap" => $faker->boolean(),
                 "created_at" => $faker->date("Y-m-d"),
-                "owner" => "Leka777kz",
+                "owner" => "szhumabekkyzy",
             ];
  
             if($data[$i]['canBeKilledBySnap']) {
@@ -37,7 +37,7 @@ class MainSteps extends \AcceptanceTester
             // проверяем что запись села в БД
             $I->seeInCollection('people', $data[$i]);
         }
-        $this->numData = $I->seeNumElementsInCollection('people', 10, ['owner' => 'Leka777kz']);
+        $this->numData = $I->seeNumElementsInCollection('people', 10, ['owner' => 'szhumabekkyzy']);
         $this->dataCount = count($data);
         $this->dataSnapCount = count($this->mustBeDeleted);
         $this->dataNonSnapCount = count($this->mustStay);
