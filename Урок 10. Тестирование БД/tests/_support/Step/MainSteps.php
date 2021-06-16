@@ -1,7 +1,7 @@
 <?php
 namespace Step\Acceptance;
 
-use Page\mainPage;
+use Page\Acceptance\mainPage;
 
 class MainSteps extends \AcceptanceTester
 {
