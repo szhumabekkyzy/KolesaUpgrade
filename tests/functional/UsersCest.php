@@ -8,7 +8,7 @@ use Page\Acceptance\Urls;
 class UsersCest
 {
     /**
-     * переменная для изменении работы
+     * переменная для изменении работыs
      */
     public static $newjob ='QA enginer';
     /**
