@@ -15,4 +15,7 @@ modules:
             windows_size: 1440x900
         - \Helper\Acceptance
         - \Helper\BaseHelper
+        capabilities:
+                goog:chromeOptions:
+                         args: [ "--headless", "--disable-gpu" ]
 step_decorators: ~           
